@@ -46,20 +46,20 @@
             this.IsyeriAdresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pozisyon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isSuresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searcbar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.ingilizceBilenlerCheckBox = new System.Windows.Forms.CheckBox();
+            this.birdenFazlaDilCheckBox = new System.Windows.Forms.CheckBox();
             this.minimumDeneyimTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.deneyimsizKisilerCheckbox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.maksimumYasTextBox = new System.Windows.Forms.TextBox();
-            this.ehilyetComboBox = new System.Windows.Forms.ComboBox();
+            this.ehliyetComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lisansTuru = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.elemanAraDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +86,10 @@
             this.IsyeriAdresi,
             this.Pozisyon,
             this.isSuresi});
-            this.elemanAraDataGrid.Location = new System.Drawing.Point(31, 181);
-            this.elemanAraDataGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.elemanAraDataGrid.Location = new System.Drawing.Point(23, 147);
             this.elemanAraDataGrid.Name = "elemanAraDataGrid";
             this.elemanAraDataGrid.RowHeadersWidth = 51;
-            this.elemanAraDataGrid.Size = new System.Drawing.Size(2323, 565);
+            this.elemanAraDataGrid.Size = new System.Drawing.Size(1742, 459);
             this.elemanAraDataGrid.TabIndex = 0;
             // 
             // Ad
@@ -246,131 +245,89 @@
             this.isSuresi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.isSuresi.Width = 125;
             // 
-            // checkBox1
+            // searcbar
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(459, 68);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 21);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Lisans";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(29, 28);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 22);
-            this.textBox1.TabIndex = 2;
+            this.searcbar.Location = new System.Drawing.Point(22, 23);
+            this.searcbar.Name = "searcbar";
+            this.searcbar.Size = new System.Drawing.Size(287, 20);
+            this.searcbar.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(459, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(344, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 26);
+            this.button1.Size = new System.Drawing.Size(104, 21);
             this.button1.TabIndex = 3;
             this.button1.Text = "ara";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox2
+            // ingilizceBilenlerCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(459, 98);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(116, 21);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Yuksek lisans";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ingilizceBilenlerCheckBox.AutoSize = true;
+            this.ingilizceBilenlerCheckBox.Location = new System.Drawing.Point(208, 55);
+            this.ingilizceBilenlerCheckBox.Name = "ingilizceBilenlerCheckBox";
+            this.ingilizceBilenlerCheckBox.Size = new System.Drawing.Size(101, 17);
+            this.ingilizceBilenlerCheckBox.TabIndex = 6;
+            this.ingilizceBilenlerCheckBox.Text = "Ingilizce Bilenler";
+            this.ingilizceBilenlerCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // birdenFazlaDilCheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(459, 134);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 21);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Doktora";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(277, 68);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(131, 21);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Ingilizce Bilenler";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(277, 101);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(173, 21);
-            this.checkBox5.TabIndex = 7;
-            this.checkBox5.Text = "Birden fazla dil bilenler";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.birdenFazlaDilCheckBox.AutoSize = true;
+            this.birdenFazlaDilCheckBox.Location = new System.Drawing.Point(208, 82);
+            this.birdenFazlaDilCheckBox.Name = "birdenFazlaDilCheckBox";
+            this.birdenFazlaDilCheckBox.Size = new System.Drawing.Size(130, 17);
+            this.birdenFazlaDilCheckBox.TabIndex = 7;
+            this.birdenFazlaDilCheckBox.Text = "Birden fazla dil bilenler";
+            this.birdenFazlaDilCheckBox.UseVisualStyleBackColor = true;
             // 
             // minimumDeneyimTextbox
             // 
-            this.minimumDeneyimTextbox.Location = new System.Drawing.Point(163, 65);
-            this.minimumDeneyimTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.minimumDeneyimTextbox.Location = new System.Drawing.Point(122, 53);
             this.minimumDeneyimTextbox.Name = "minimumDeneyimTextbox";
-            this.minimumDeneyimTextbox.Size = new System.Drawing.Size(91, 22);
+            this.minimumDeneyimTextbox.Size = new System.Drawing.Size(69, 20);
             this.minimumDeneyimTextbox.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 69);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(20, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 17);
+            this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Minimum deneyim :";
             // 
-            // checkBox6
+            // deneyimsizKisilerCheckbox
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(277, 137);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(142, 21);
-            this.checkBox6.TabIndex = 10;
-            this.checkBox6.Text = "Deneyimsiz kisiler";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.deneyimsizKisilerCheckbox.AutoSize = true;
+            this.deneyimsizKisilerCheckbox.Location = new System.Drawing.Point(208, 111);
+            this.deneyimsizKisilerCheckbox.Name = "deneyimsizKisilerCheckbox";
+            this.deneyimsizKisilerCheckbox.Size = new System.Drawing.Size(108, 17);
+            this.deneyimsizKisilerCheckbox.TabIndex = 10;
+            this.deneyimsizKisilerCheckbox.Text = "Deneyimsiz kisiler";
+            this.deneyimsizKisilerCheckbox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 105);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(37, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 17);
+            this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Maksimum yas:";
             // 
             // maksimumYasTextBox
             // 
-            this.maksimumYasTextBox.Location = new System.Drawing.Point(163, 101);
-            this.maksimumYasTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.maksimumYasTextBox.Location = new System.Drawing.Point(122, 82);
             this.maksimumYasTextBox.Name = "maksimumYasTextBox";
-            this.maksimumYasTextBox.Size = new System.Drawing.Size(91, 22);
+            this.maksimumYasTextBox.Size = new System.Drawing.Size(69, 20);
             this.maksimumYasTextBox.TabIndex = 11;
             // 
-            // ehilyetComboBox
+            // ehliyetComboBox
             // 
-            this.ehilyetComboBox.FormattingEnabled = true;
-            this.ehilyetComboBox.Items.AddRange(new object[] {
+            this.ehliyetComboBox.FormattingEnabled = true;
+            this.ehliyetComboBox.Items.AddRange(new object[] {
             "M",
             "A1",
             "A2",
@@ -388,43 +345,70 @@
             "DE",
             "F",
             "G"});
-            this.ehilyetComboBox.Location = new System.Drawing.Point(163, 133);
-            this.ehilyetComboBox.Margin = new System.Windows.Forms.Padding(4);
-            this.ehilyetComboBox.Name = "ehilyetComboBox";
-            this.ehilyetComboBox.Size = new System.Drawing.Size(91, 24);
-            this.ehilyetComboBox.TabIndex = 13;
+            this.ehliyetComboBox.Location = new System.Drawing.Point(122, 108);
+            this.ehliyetComboBox.Name = "ehliyetComboBox";
+            this.ehliyetComboBox.Size = new System.Drawing.Size(69, 21);
+            this.ehliyetComboBox.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(100, 137);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(75, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 17);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 14;
             this.label3.Text = "Ehliyet:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(341, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Turu:";
+            // 
+            // lisansTuru
+            // 
+            this.lisansTuru.FormattingEnabled = true;
+            this.lisansTuru.Items.AddRange(new object[] {
+            "Lisans",
+            "Yuksek Lisans",
+            "Doktora"});
+            this.lisansTuru.Location = new System.Drawing.Point(379, 53);
+            this.lisansTuru.Name = "lisansTuru";
+            this.lisansTuru.Size = new System.Drawing.Size(69, 21);
+            this.lisansTuru.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(344, 107);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 21);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Filtreleme ozellestir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // ElemanAra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 761);
+            this.ClientSize = new System.Drawing.Size(1794, 618);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lisansTuru);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ehilyetComboBox);
+            this.Controls.Add(this.ehliyetComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.maksimumYasTextBox);
-            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.deneyimsizKisilerCheckbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.minimumDeneyimTextbox);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.birdenFazlaDilCheckBox);
+            this.Controls.Add(this.ingilizceBilenlerCheckBox);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.searcbar);
             this.Controls.Add(this.elemanAraDataGrid);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ElemanAra";
             this.Text = "ElemanAra";
             this.Load += new System.EventHandler(this.ElemanAra_Load);
@@ -437,19 +421,16 @@
         #endregion
 
         private System.Windows.Forms.DataGridView elemanAraDataGrid;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searcbar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox ingilizceBilenlerCheckBox;
+        private System.Windows.Forms.CheckBox birdenFazlaDilCheckBox;
         private System.Windows.Forms.TextBox minimumDeneyimTextbox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox deneyimsizKisilerCheckbox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox maksimumYasTextBox;
-        private System.Windows.Forms.ComboBox ehilyetComboBox;
+        private System.Windows.Forms.ComboBox ehliyetComboBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Adres;
@@ -468,5 +449,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IsyeriAdresi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pozisyon;
         private System.Windows.Forms.DataGridViewTextBoxColumn isSuresi;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox lisansTuru;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -44,20 +44,20 @@
             this.mailLabel = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.egitimBilgisiDataGrid = new System.Windows.Forms.DataGridView();
+            this.isyeriBilgileriDataGrid = new System.Windows.Forms.DataGridView();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.verileriSil = new System.Windows.Forms.Button();
             this.OkulAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Turu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Bolumu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BaglangicTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BitisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotOrtalamasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isyeriBilgileriDataGrid = new System.Windows.Forms.DataGridView();
             this.IsyeriAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsyeriAdresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gorevi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CalismaSuresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.verileriSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.egitimBilgisiDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.isyeriBilgileriDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -201,7 +201,7 @@
             // egitimBilgisiDataGrid
             // 
             this.egitimBilgisiDataGrid.AllowUserToAddRows = false;
-            this.egitimBilgisiDataGrid.AllowUserToOrderColumns = true;
+            this.egitimBilgisiDataGrid.AllowUserToDeleteRows = false;
             this.egitimBilgisiDataGrid.BackgroundColor = System.Drawing.Color.White;
             this.egitimBilgisiDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.egitimBilgisiDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -215,40 +215,6 @@
             this.egitimBilgisiDataGrid.Name = "egitimBilgisiDataGrid";
             this.egitimBilgisiDataGrid.Size = new System.Drawing.Size(516, 150);
             this.egitimBilgisiDataGrid.TabIndex = 62;
-            // 
-            // OkulAdi
-            // 
-            this.OkulAdi.HeaderText = "OkulAdi";
-            this.OkulAdi.Name = "OkulAdi";
-            // 
-            // Turu
-            // 
-            this.Turu.HeaderText = "Turu";
-            this.Turu.Name = "Turu";
-            // 
-            // Bolumu
-            // 
-            this.Bolumu.HeaderText = "Bolumu";
-            this.Bolumu.Name = "Bolumu";
-            this.Bolumu.ReadOnly = true;
-            // 
-            // BaglangicTarihi
-            // 
-            this.BaglangicTarihi.HeaderText = "BaglangicTarihi";
-            this.BaglangicTarihi.Name = "BaglangicTarihi";
-            this.BaglangicTarihi.ReadOnly = true;
-            // 
-            // BitisTarihi
-            // 
-            this.BitisTarihi.HeaderText = "BitisTarihi";
-            this.BitisTarihi.Name = "BitisTarihi";
-            this.BitisTarihi.ReadOnly = true;
-            // 
-            // NotOrtalamasi
-            // 
-            this.NotOrtalamasi.HeaderText = "NotOrtalamasi";
-            this.NotOrtalamasi.Name = "NotOrtalamasi";
-            this.NotOrtalamasi.ReadOnly = true;
             // 
             // isyeriBilgileriDataGrid
             // 
@@ -267,30 +233,6 @@
             this.isyeriBilgileriDataGrid.Name = "isyeriBilgileriDataGrid";
             this.isyeriBilgileriDataGrid.Size = new System.Drawing.Size(516, 150);
             this.isyeriBilgileriDataGrid.TabIndex = 63;
-            // 
-            // IsyeriAdi
-            // 
-            this.IsyeriAdi.HeaderText = "IsyeriAdi";
-            this.IsyeriAdi.Name = "IsyeriAdi";
-            this.IsyeriAdi.ReadOnly = true;
-            // 
-            // IsyeriAdresi
-            // 
-            this.IsyeriAdresi.HeaderText = "IsyeriAdresi";
-            this.IsyeriAdresi.Name = "IsyeriAdresi";
-            this.IsyeriAdresi.ReadOnly = true;
-            // 
-            // Gorevi
-            // 
-            this.Gorevi.HeaderText = "Gorevi";
-            this.Gorevi.Name = "Gorevi";
-            this.Gorevi.ReadOnly = true;
-            // 
-            // CalismaSuresi
-            // 
-            this.CalismaSuresi.HeaderText = "CalismaSuresi";
-            this.CalismaSuresi.Name = "CalismaSuresi";
-            this.CalismaSuresi.ReadOnly = true;
             // 
             // label39
             // 
@@ -319,6 +261,76 @@
             this.verileriSil.Text = "Verileri sil ve sistemden cik";
             this.verileriSil.UseVisualStyleBackColor = true;
             this.verileriSil.Click += new System.EventHandler(this.verileriSil_Click);
+            // 
+            // OkulAdi
+            // 
+            this.OkulAdi.HeaderText = "OkulAdi";
+            this.OkulAdi.Name = "OkulAdi";
+            this.OkulAdi.ReadOnly = true;
+            this.OkulAdi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Turu
+            // 
+            this.Turu.HeaderText = "Turu";
+            this.Turu.Name = "Turu";
+            this.Turu.ReadOnly = true;
+            this.Turu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Bolumu
+            // 
+            this.Bolumu.HeaderText = "Bolumu";
+            this.Bolumu.Name = "Bolumu";
+            this.Bolumu.ReadOnly = true;
+            this.Bolumu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // BaglangicTarihi
+            // 
+            this.BaglangicTarihi.HeaderText = "BaglangicTarihi";
+            this.BaglangicTarihi.Name = "BaglangicTarihi";
+            this.BaglangicTarihi.ReadOnly = true;
+            this.BaglangicTarihi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // BitisTarihi
+            // 
+            this.BitisTarihi.HeaderText = "BitisTarihi";
+            this.BitisTarihi.Name = "BitisTarihi";
+            this.BitisTarihi.ReadOnly = true;
+            this.BitisTarihi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // NotOrtalamasi
+            // 
+            this.NotOrtalamasi.HeaderText = "NotOrtalamasi";
+            this.NotOrtalamasi.Name = "NotOrtalamasi";
+            this.NotOrtalamasi.ReadOnly = true;
+            this.NotOrtalamasi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // IsyeriAdi
+            // 
+            this.IsyeriAdi.HeaderText = "IsyeriAdi";
+            this.IsyeriAdi.Name = "IsyeriAdi";
+            this.IsyeriAdi.ReadOnly = true;
+            this.IsyeriAdi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // IsyeriAdresi
+            // 
+            this.IsyeriAdresi.HeaderText = "IsyeriAdresi";
+            this.IsyeriAdresi.Name = "IsyeriAdresi";
+            this.IsyeriAdresi.ReadOnly = true;
+            this.IsyeriAdresi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Gorevi
+            // 
+            this.Gorevi.HeaderText = "Gorevi";
+            this.Gorevi.Name = "Gorevi";
+            this.Gorevi.ReadOnly = true;
+            this.Gorevi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // CalismaSuresi
+            // 
+            this.CalismaSuresi.HeaderText = "CalismaSuresi";
+            this.CalismaSuresi.Name = "CalismaSuresi";
+            this.CalismaSuresi.ReadOnly = true;
+            this.CalismaSuresi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // CalisanArayuzu
             // 

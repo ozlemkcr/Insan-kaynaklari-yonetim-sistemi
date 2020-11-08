@@ -19,27 +19,56 @@ namespace yazGel1v1
         }
         private void kaydet_Click(object sender, EventArgs e)
         {
-            if (kullaniciAdiLabel.Text == "-")
+            if (!hucreKontrol(egitimBilgisiDataGridEkle))
             {
-                AgacListesiStaticClass.agaclistesi.ekle(kisiAdiText.Text, kisiAdresiText.Text, telefonText.Text, mailText.Text, dogumTarihiText.Text, yabanciDilText.Text, ehliyetText.Text, egitimBilgisiEkle(), isyeriEkle());
-                KullaniciAdiDosyaIslemleri.kullaniciAdiSifreEkle(telefonText.Text,sifreText.Text);
-                AgacListesiStaticClass.agaclistesi.textiGuncelle();
-                
-                MessageBox.Show("Kayit basarili!");
-                this.Close();
-            }else
+                MessageBox.Show("Ilgili alanlari doldurun!");
+            } else if (!hucreKontrol(isyeriBilgileriDataGrid))
             {
-                AgacListesiStaticClass.agaclistesi.delete(AgacListesiStaticClass.kisiAdi,kullaniciAdiLabel.Text);
-                AgacListesiStaticClass.agaclistesi.ekle(kisiAdiText.Text, kisiAdresiText.Text, telefonText.Text, mailText.Text, dogumTarihiText.Text, yabanciDilText.Text, ehliyetText.Text, egitimBilgisiEkle(), isyeriEkle());
-                AgacListesiStaticClass.agaclistesi.textiGuncelle();
-                AgacListesiStaticClass.telefonNo = telefonText.Text;
-                KullaniciAdiDosyaIslemleri.kullaniciAdiGuncelle(kullaniciAdiLabel.Text,telefonText.Text);
-                MessageBox.Show("Guncelleme basarili!");
-                this.Close();
-               
-                
-                
+                MessageBox.Show("Ilgili alanlari doldurun!");
+            } else if (textboxKontrol())
+            {
+                MessageBox.Show("Ilgili alanlari doldurun!");
+            } else if (sifreKontrol())
+            {
+                MessageBox.Show("Sifreler eslesmiyor.");
+            } else if (KullaniciAdiDosyaIslemleri.telefonKontrol(telefonText.Text))
+            {
+                MessageBox.Show("Bu telefon numarasi zaten kayitli");
             }
+            else
+            {
+                if (kullaniciAdiLabel.Text == "-")
+                {
+                    AgacListesiStaticClass.agaclistesi.ekle(kisiAdiText.Text, kisiAdresiText.Text, telefonText.Text, mailText.Text, dogumTarihiText.Text, yabanciDilText.Text, ehliyetText.Text, egitimBilgisiEkle(), isyeriEkle());
+                    KullaniciAdiDosyaIslemleri.kullaniciAdiSifreEkle(telefonText.Text, sifreText.Text);
+                    AgacListesiStaticClass.agaclistesi.textiGuncelle();
+
+                    MessageBox.Show("Kayit basarili!");
+                    this.Close();
+                }
+                else
+                {
+                    AgacListesiStaticClass.agaclistesi.delete(AgacListesiStaticClass.kisiAdi, kullaniciAdiLabel.Text);
+                    AgacListesiStaticClass.agaclistesi.ekle(kisiAdiText.Text, kisiAdresiText.Text, telefonText.Text, mailText.Text, dogumTarihiText.Text, yabanciDilText.Text, ehliyetText.Text, egitimBilgisiEkle(), isyeriEkle());
+                    AgacListesiStaticClass.agaclistesi.textiGuncelle();
+                    AgacListesiStaticClass.telefonNo = telefonText.Text;
+                    KullaniciAdiDosyaIslemleri.kullaniciAdiGuncelle(kullaniciAdiLabel.Text, telefonText.Text);
+                    MessageBox.Show("Guncelleme basarili!");
+                    this.Close();
+
+
+
+                }
+            }
+            
+        }
+        private bool sifreKontrol()
+        {
+            if (sifreTekrarText.Text == sifreText.Text)
+            {
+                return false;
+            }
+            return true;
         }
         private void EkleGuncelle_Load(object sender, EventArgs e)
         {
@@ -190,7 +219,7 @@ namespace yazGel1v1
 
         private void verileriArayuzeBas()
         {
-            AgacListesiStaticClass.agaclistesi.treeDugumDondur(AgacListesiStaticClass.telefonNo);
+            AgacListesiStaticClass.agaclistesi.filtrelemeFonksiyonu(AgacListesiStaticClass.telefonNo,"telefon");
             Liste.TreeNode node = AgacListesiStaticClass.agaclistesi.cekilecekNode;
 
             
@@ -225,6 +254,47 @@ namespace yazGel1v1
                     );
             }
         }
+
+        private bool hucreKontrol(DataGridView datagrid)
+        {
+            
+            for (int i=0; i<datagrid.Rows.Count; i++)
+            {
+                
+                for (int j=0; j<datagrid.Columns.Count; j++)
+                {
+                    if (datagrid.Rows[i].Cells[j].Value==null)
+                    {
+                        for(int a =j; a< datagrid.Columns.Count; a++)
+                        {
+                            if(datagrid.Rows[i].Cells[j].Value != datagrid.Rows[i].Cells[a].Value)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            return true;
+        }
+        private bool textboxKontrol()
+        {
+            if (
+                sifreText.Text=="" ||
+                sifreTekrarText.Text == "" ||
+                kisiAdiText.Text == "" ||
+                kisiAdresiText.Text == "" ||
+                telefonText.Text == "" || 
+                dogumTarihiText.Text == "" ||
+                mailText.Text == "" ||
+                ehliyetText.Text == "")
+            {
+                return true;
+            }
+            return false;
+        }
+        
 
         
     }

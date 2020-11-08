@@ -29,18 +29,25 @@ namespace yazGel1v1
 
         private void giris_Click(object sender, EventArgs e)
         {
-
-            if (KullaniciAdiDosyaIslemleri.girisKontrol(kullaniciAdi.Text,sifre.Text))
+            if(kullaniciAdi.Text=="" || sifre.Text == "")
             {
-                CalisanArayuzu form = new CalisanArayuzu();
-                AgacListesiStaticClass.telefonNo = kullaniciAdi.Text;
-                form.ShowDialog();  
-                
+                MessageBox.Show("Ilgili alanlari doldurun.");
             }
             else
             {
-                MessageBox.Show("Kullanici adi sifre hatali");
+                if (KullaniciAdiDosyaIslemleri.girisKontrol(kullaniciAdi.Text, sifre.Text))
+                {
+                    CalisanArayuzu form = new CalisanArayuzu();
+                    AgacListesiStaticClass.telefonNo = kullaniciAdi.Text;
+                    form.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("Kullanici adi sifre hatali");
+                }
             }
+            
 
         }
 

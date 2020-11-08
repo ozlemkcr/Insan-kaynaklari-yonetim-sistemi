@@ -53,7 +53,7 @@ namespace yazGel1v1
         {
             egitimBilgisiDataGrid.Rows.Clear();
             isyeriBilgileriDataGrid.Rows.Clear();
-            AgacListesiStaticClass.agaclistesi.treeDugumDondur(AgacListesiStaticClass.telefonNo);
+            AgacListesiStaticClass.agaclistesi.filtrelemeFonksiyonu(AgacListesiStaticClass.telefonNo,"telefon");
             Liste.TreeNode node = AgacListesiStaticClass.agaclistesi.cekilecekNode;
 
             adiLabel.Text = node.kisiAdiSoyadi;

@@ -1,0 +1,81 @@
+*********KISI BILGILERI*********
+ 
+Kisi Adi Soyadi: a
+Kisi Adresi: Uskudar
+Kisi Telefonu: 123
+Kisi Mail: z@gamil
+Kisi DogumTarihi: 1999
+Kisi Yabanci Dil: ing
+Kisi Ehliyet: b1,b2,b3
+ 
+--------Egitim Bilgileri--------
+ 
+Okul Adi: 1
+Okul Turu: 1
+Bolumu: 1
+Baslangic Tarihi: 1
+Bitis Tarihi: 1
+Not Ortalamasi: 1
+......
++++++++++Isyeri Bilgileri+++++++++
+ 
+Isyeri Adi: 1
+Isyeri Adresi: 1
+Gorevi: 1
+Calisma suresi: 1
+......
+_____________________________________________________________________
+*********KISI BILGILERI*********
+ 
+Kisi Adi Soyadi: das
+Kisi Adresi: Uskudar
+Kisi Telefonu: 12
+Kisi Mail: z@gamil
+Kisi DogumTarihi: 1999
+Kisi Yabanci Dil: ing
+Kisi Ehliyet: b1,b2
+ 
+--------Egitim Bilgileri--------
+ 
+Okul Adi: 1
+Okul Turu: 1
+Bolumu: 1
+Baslangic Tarihi: 1
+Bitis Tarihi: 1
+Not Ortalamasi: 1
+......
++++++++++Isyeri Bilgileri+++++++++
+ 
+Isyeri Adi: 1
+Isyeri Adresi: 1
+Gorevi: 1
+Calisma suresi: 1
+......
+_____________________________________________________________________
+*********KISI BILGILERI*********
+ 
+Kisi Adi Soyadi: zeynep
+Kisi Adresi: Uskudar
+Kisi Telefonu: 1
+Kisi Mail: z@gamil
+Kisi DogumTarihi: 1999
+Kisi Yabanci Dil: ing
+Kisi Ehliyet: b1
+ 
+--------Egitim Bilgileri--------
+ 
+Okul Adi: 1
+Okul Turu: 1
+Bolumu: 1
+Baslangic Tarihi: 1
+Bitis Tarihi: 1
+Not Ortalamasi: 1
+......
++++++++++Isyeri Bilgileri+++++++++
+ 
+Isyeri Adi: 1
+Isyeri Adresi: 1
+Gorevi: 1
+Calisma suresi: 1
+......
+_____________________________________________________________________

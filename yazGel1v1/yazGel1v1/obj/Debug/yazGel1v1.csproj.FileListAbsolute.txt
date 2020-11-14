@@ -79,3 +79,4 @@ C:\Users\LENOVO\Desktop\InsanKaynaklari-Yonetim-Sistemi-yazlab1--main\yazGel1v1\
 C:\Users\LENOVO\Desktop\InsanKaynaklari-Yonetim-Sistemi-yazlab1--main\yazGel1v1\yazGel1v1\obj\Debug\yazGel1v1.csproj.CopyComplete
 C:\Users\LENOVO\Desktop\InsanKaynaklari-Yonetim-Sistemi-yazlab1--main\yazGel1v1\yazGel1v1\obj\Debug\yazGel1v1.exe
 C:\Users\LENOVO\Desktop\InsanKaynaklari-Yonetim-Sistemi-yazlab1--main\yazGel1v1\yazGel1v1\obj\Debug\yazGel1v1.pdb
+C:\Users\MSI\Desktop\InsanKaynaklari-Yonetim-Sistemi-yazlab1--main\yazGel1v1\yazGel1v1\obj\Debug\yazGel1v1.DosyaAdi.resources

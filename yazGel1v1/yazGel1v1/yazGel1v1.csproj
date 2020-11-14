@@ -56,6 +56,12 @@
     <Compile Include="CalisanArayuzu.Designer.cs">
       <DependentUpon>CalisanArayuzu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DosyaAdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaAdi.Designer.cs">
+      <DependentUpon>DosyaAdi.cs</DependentUpon>
+    </Compile>
     <Compile Include="EgitimBilgileriListe.cs" />
     <Compile Include="EgitimBilgileriNode.cs" />
     <Compile Include="EkleGuncelle.cs">
@@ -70,7 +76,6 @@
     <Compile Include="ElemanAra.Designer.cs">
       <DependentUpon>ElemanAra.cs</DependentUpon>
     </Compile>
-    <Compile Include="FiltrelemeFonksiyonlari.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +91,9 @@
     <Compile Include="TreeNode.cs" />
     <EmbeddedResource Include="CalisanArayuzu.resx">
       <DependentUpon>CalisanArayuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaAdi.resx">
+      <DependentUpon>DosyaAdi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EkleGuncelle.resx">
       <DependentUpon>EkleGuncelle.cs</DependentUpon>

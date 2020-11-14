@@ -219,7 +219,7 @@ namespace yazGel1v1
 
         private void verileriArayuzeBas()
         {
-            AgacListesiStaticClass.agaclistesi.filtrelemeFonksiyonu(AgacListesiStaticClass.telefonNo,"telefon");
+            AgacListesiStaticClass.agaclistesi.filtrelemeFonksiyonu(AgacListesiStaticClass.telefonNo,"telefon","inOrder");
             Liste.TreeNode node = AgacListesiStaticClass.agaclistesi.cekilecekNode;
 
             

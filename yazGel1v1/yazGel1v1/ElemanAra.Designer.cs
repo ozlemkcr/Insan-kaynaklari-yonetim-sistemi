@@ -28,24 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.elemanAraDataGrid = new System.Windows.Forms.DataGridView();
-            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DogumTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.YabanciDil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ehliyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OkulAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Turu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bolumu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BaglangicTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BitisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NotOrtalamasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsyeriAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsyeriAdresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pozisyon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isSuresi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.searcbar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.ingilizceBilenlerCheckBox = new System.Windows.Forms.CheckBox();
@@ -59,269 +42,120 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lisansTuru = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.inOrder = new System.Windows.Forms.RadioButton();
+            this.preOrder = new System.Windows.Forms.RadioButton();
+            this.postOrder = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.elemanSayisi = new System.Windows.Forms.Label();
+            this.elemanAraDataGrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dosyabuton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.elemanAraDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // elemanAraDataGrid
-            // 
-            this.elemanAraDataGrid.AllowUserToAddRows = false;
-            this.elemanAraDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.elemanAraDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.elemanAraDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ad,
-            this.Adres,
-            this.Telefon,
-            this.Mail,
-            this.DogumTarihi,
-            this.YabanciDil,
-            this.Ehliyet,
-            this.OkulAdi,
-            this.Turu,
-            this.Bolumu,
-            this.BaglangicTarihi,
-            this.BitisTarihi,
-            this.NotOrtalamasi,
-            this.IsyeriAdi,
-            this.IsyeriAdresi,
-            this.Pozisyon,
-            this.isSuresi});
-            this.elemanAraDataGrid.Location = new System.Drawing.Point(23, 147);
-            this.elemanAraDataGrid.Name = "elemanAraDataGrid";
-            this.elemanAraDataGrid.RowHeadersWidth = 51;
-            this.elemanAraDataGrid.Size = new System.Drawing.Size(1742, 459);
-            this.elemanAraDataGrid.TabIndex = 0;
-            // 
-            // Ad
-            // 
-            this.Ad.HeaderText = "Ad";
-            this.Ad.MinimumWidth = 6;
-            this.Ad.Name = "Ad";
-            this.Ad.ReadOnly = true;
-            this.Ad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ad.Width = 125;
-            // 
-            // Adres
-            // 
-            this.Adres.HeaderText = "Adres";
-            this.Adres.MinimumWidth = 6;
-            this.Adres.Name = "Adres";
-            this.Adres.ReadOnly = true;
-            this.Adres.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Adres.Width = 125;
-            // 
-            // Telefon
-            // 
-            this.Telefon.HeaderText = "Telefon";
-            this.Telefon.MinimumWidth = 6;
-            this.Telefon.Name = "Telefon";
-            this.Telefon.ReadOnly = true;
-            this.Telefon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefon.Width = 125;
-            // 
-            // Mail
-            // 
-            this.Mail.HeaderText = "Mail";
-            this.Mail.MinimumWidth = 6;
-            this.Mail.Name = "Mail";
-            this.Mail.ReadOnly = true;
-            this.Mail.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Mail.Width = 125;
-            // 
-            // DogumTarihi
-            // 
-            this.DogumTarihi.HeaderText = "DogumTarihi";
-            this.DogumTarihi.MinimumWidth = 6;
-            this.DogumTarihi.Name = "DogumTarihi";
-            this.DogumTarihi.ReadOnly = true;
-            this.DogumTarihi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DogumTarihi.Width = 125;
-            // 
-            // YabanciDil
-            // 
-            this.YabanciDil.HeaderText = "YabanciDil";
-            this.YabanciDil.MinimumWidth = 6;
-            this.YabanciDil.Name = "YabanciDil";
-            this.YabanciDil.ReadOnly = true;
-            this.YabanciDil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.YabanciDil.Width = 125;
-            // 
-            // Ehliyet
-            // 
-            this.Ehliyet.HeaderText = "Ehliyet";
-            this.Ehliyet.MinimumWidth = 6;
-            this.Ehliyet.Name = "Ehliyet";
-            this.Ehliyet.ReadOnly = true;
-            this.Ehliyet.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ehliyet.Width = 125;
-            // 
-            // OkulAdi
-            // 
-            this.OkulAdi.HeaderText = "OkulAdi";
-            this.OkulAdi.MinimumWidth = 6;
-            this.OkulAdi.Name = "OkulAdi";
-            this.OkulAdi.ReadOnly = true;
-            this.OkulAdi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.OkulAdi.Width = 125;
-            // 
-            // Turu
-            // 
-            this.Turu.HeaderText = "Turu";
-            this.Turu.MinimumWidth = 6;
-            this.Turu.Name = "Turu";
-            this.Turu.ReadOnly = true;
-            this.Turu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Turu.Width = 125;
-            // 
-            // Bolumu
-            // 
-            this.Bolumu.HeaderText = "Bolumu";
-            this.Bolumu.MinimumWidth = 6;
-            this.Bolumu.Name = "Bolumu";
-            this.Bolumu.ReadOnly = true;
-            this.Bolumu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Bolumu.Width = 125;
-            // 
-            // BaglangicTarihi
-            // 
-            this.BaglangicTarihi.HeaderText = "BaglangicTarihi";
-            this.BaglangicTarihi.MinimumWidth = 6;
-            this.BaglangicTarihi.Name = "BaglangicTarihi";
-            this.BaglangicTarihi.ReadOnly = true;
-            this.BaglangicTarihi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.BaglangicTarihi.Width = 125;
-            // 
-            // BitisTarihi
-            // 
-            this.BitisTarihi.HeaderText = "BitisTarihi";
-            this.BitisTarihi.MinimumWidth = 6;
-            this.BitisTarihi.Name = "BitisTarihi";
-            this.BitisTarihi.ReadOnly = true;
-            this.BitisTarihi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.BitisTarihi.Width = 125;
-            // 
-            // NotOrtalamasi
-            // 
-            this.NotOrtalamasi.HeaderText = "NotOrtalamasi";
-            this.NotOrtalamasi.MinimumWidth = 6;
-            this.NotOrtalamasi.Name = "NotOrtalamasi";
-            this.NotOrtalamasi.ReadOnly = true;
-            this.NotOrtalamasi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NotOrtalamasi.Width = 125;
-            // 
-            // IsyeriAdi
-            // 
-            this.IsyeriAdi.HeaderText = "IsyeriAdi";
-            this.IsyeriAdi.MinimumWidth = 6;
-            this.IsyeriAdi.Name = "IsyeriAdi";
-            this.IsyeriAdi.ReadOnly = true;
-            this.IsyeriAdi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.IsyeriAdi.Width = 125;
-            // 
-            // IsyeriAdresi
-            // 
-            this.IsyeriAdresi.HeaderText = "IsyeriAdresi";
-            this.IsyeriAdresi.MinimumWidth = 6;
-            this.IsyeriAdresi.Name = "IsyeriAdresi";
-            this.IsyeriAdresi.ReadOnly = true;
-            this.IsyeriAdresi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.IsyeriAdresi.Width = 125;
-            // 
-            // Pozisyon
-            // 
-            this.Pozisyon.HeaderText = "İş Tecrübesi Pozisyon veya Görevi";
-            this.Pozisyon.MinimumWidth = 6;
-            this.Pozisyon.Name = "Pozisyon";
-            this.Pozisyon.ReadOnly = true;
-            this.Pozisyon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Pozisyon.Width = 125;
-            // 
-            // isSuresi
-            // 
-            this.isSuresi.HeaderText = "İş Tecrübesi Suresi";
-            this.isSuresi.MinimumWidth = 6;
-            this.isSuresi.Name = "isSuresi";
-            this.isSuresi.ReadOnly = true;
-            this.isSuresi.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.isSuresi.Width = 125;
-            // 
             // searcbar
             // 
-            this.searcbar.Location = new System.Drawing.Point(22, 23);
+            this.searcbar.Location = new System.Drawing.Point(29, 33);
+            this.searcbar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.searcbar.Name = "searcbar";
-            this.searcbar.Size = new System.Drawing.Size(287, 20);
+            this.searcbar.Size = new System.Drawing.Size(381, 26);
             this.searcbar.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(344, 23);
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(459, 197);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 21);
+            this.button1.Size = new System.Drawing.Size(132, 31);
             this.button1.TabIndex = 3;
-            this.button1.Text = "ara";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Ara";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ingilizceBilenlerCheckBox
             // 
             this.ingilizceBilenlerCheckBox.AutoSize = true;
-            this.ingilizceBilenlerCheckBox.Location = new System.Drawing.Point(208, 55);
+            this.ingilizceBilenlerCheckBox.Location = new System.Drawing.Point(277, 79);
+            this.ingilizceBilenlerCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ingilizceBilenlerCheckBox.Name = "ingilizceBilenlerCheckBox";
-            this.ingilizceBilenlerCheckBox.Size = new System.Drawing.Size(101, 17);
+            this.ingilizceBilenlerCheckBox.Size = new System.Drawing.Size(142, 23);
             this.ingilizceBilenlerCheckBox.TabIndex = 6;
-            this.ingilizceBilenlerCheckBox.Text = "Ingilizce Bilenler";
+            this.ingilizceBilenlerCheckBox.Text = "İngilizce Bilenler";
             this.ingilizceBilenlerCheckBox.UseVisualStyleBackColor = true;
             // 
             // birdenFazlaDilCheckBox
             // 
             this.birdenFazlaDilCheckBox.AutoSize = true;
-            this.birdenFazlaDilCheckBox.Location = new System.Drawing.Point(208, 82);
+            this.birdenFazlaDilCheckBox.Location = new System.Drawing.Point(277, 119);
+            this.birdenFazlaDilCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.birdenFazlaDilCheckBox.Name = "birdenFazlaDilCheckBox";
-            this.birdenFazlaDilCheckBox.Size = new System.Drawing.Size(130, 17);
+            this.birdenFazlaDilCheckBox.Size = new System.Drawing.Size(189, 23);
             this.birdenFazlaDilCheckBox.TabIndex = 7;
-            this.birdenFazlaDilCheckBox.Text = "Birden fazla dil bilenler";
+            this.birdenFazlaDilCheckBox.Text = "Birden Fazla Dil Bilenler";
             this.birdenFazlaDilCheckBox.UseVisualStyleBackColor = true;
             // 
             // minimumDeneyimTextbox
             // 
-            this.minimumDeneyimTextbox.Location = new System.Drawing.Point(122, 53);
+            this.minimumDeneyimTextbox.Location = new System.Drawing.Point(163, 77);
+            this.minimumDeneyimTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.minimumDeneyimTextbox.Name = "minimumDeneyimTextbox";
-            this.minimumDeneyimTextbox.Size = new System.Drawing.Size(69, 20);
+            this.minimumDeneyimTextbox.Size = new System.Drawing.Size(91, 26);
             this.minimumDeneyimTextbox.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 56);
+            this.label1.Location = new System.Drawing.Point(18, 82);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.Size = new System.Drawing.Size(132, 19);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Minimum deneyim :";
+            this.label1.Text = "Minimum Deneyim :";
             // 
             // deneyimsizKisilerCheckbox
             // 
             this.deneyimsizKisilerCheckbox.AutoSize = true;
-            this.deneyimsizKisilerCheckbox.Location = new System.Drawing.Point(208, 111);
+            this.deneyimsizKisilerCheckbox.Location = new System.Drawing.Point(277, 156);
+            this.deneyimsizKisilerCheckbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deneyimsizKisilerCheckbox.Name = "deneyimsizKisilerCheckbox";
-            this.deneyimsizKisilerCheckbox.Size = new System.Drawing.Size(108, 17);
+            this.deneyimsizKisilerCheckbox.Size = new System.Drawing.Size(151, 23);
             this.deneyimsizKisilerCheckbox.TabIndex = 10;
-            this.deneyimsizKisilerCheckbox.Text = "Deneyimsiz kisiler";
+            this.deneyimsizKisilerCheckbox.Text = "Deneyimsiz Kişiler";
             this.deneyimsizKisilerCheckbox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 85);
+            this.label2.Location = new System.Drawing.Point(36, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(111, 19);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Maksimum yas:";
+            this.label2.Text = "Maksimum Yaş :";
             // 
             // maksimumYasTextBox
             // 
-            this.maksimumYasTextBox.Location = new System.Drawing.Point(122, 82);
+            this.maksimumYasTextBox.Location = new System.Drawing.Point(163, 117);
+            this.maksimumYasTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maksimumYasTextBox.Name = "maksimumYasTextBox";
-            this.maksimumYasTextBox.Size = new System.Drawing.Size(69, 20);
+            this.maksimumYasTextBox.Size = new System.Drawing.Size(91, 26);
             this.maksimumYasTextBox.TabIndex = 11;
             // 
             // ehliyetComboBox
@@ -345,28 +179,31 @@
             "DE",
             "F",
             "G"});
-            this.ehliyetComboBox.Location = new System.Drawing.Point(122, 108);
+            this.ehliyetComboBox.Location = new System.Drawing.Point(163, 157);
+            this.ehliyetComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ehliyetComboBox.Name = "ehliyetComboBox";
-            this.ehliyetComboBox.Size = new System.Drawing.Size(69, 21);
+            this.ehliyetComboBox.Size = new System.Drawing.Size(91, 26);
             this.ehliyetComboBox.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 111);
+            this.label3.Location = new System.Drawing.Point(86, 162);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Ehliyet:";
+            this.label3.Text = "Ehliyet :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(341, 56);
+            this.label4.Location = new System.Drawing.Point(67, 203);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(82, 19);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Turu:";
+            this.label4.Text = "Okul Türü :";
             // 
             // lisansTuru
             // 
@@ -375,26 +212,268 @@
             "Lisans",
             "Yuksek Lisans",
             "Doktora"});
-            this.lisansTuru.Location = new System.Drawing.Point(379, 53);
+            this.lisansTuru.Location = new System.Drawing.Point(163, 200);
+            this.lisansTuru.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lisansTuru.Name = "lisansTuru";
-            this.lisansTuru.Size = new System.Drawing.Size(69, 21);
+            this.lisansTuru.Size = new System.Drawing.Size(91, 26);
             this.lisansTuru.TabIndex = 15;
             // 
-            // button2
+            // inOrder
             // 
-            this.button2.Location = new System.Drawing.Point(344, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 21);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Filtreleme ozellestir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.inOrder.AutoSize = true;
+            this.inOrder.Checked = true;
+            this.inOrder.Location = new System.Drawing.Point(492, 78);
+            this.inOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inOrder.Name = "inOrder";
+            this.inOrder.Size = new System.Drawing.Size(82, 23);
+            this.inOrder.TabIndex = 18;
+            this.inOrder.TabStop = true;
+            this.inOrder.Text = "inOrder";
+            this.inOrder.UseVisualStyleBackColor = true;
+            // 
+            // preOrder
+            // 
+            this.preOrder.AutoSize = true;
+            this.preOrder.Location = new System.Drawing.Point(492, 116);
+            this.preOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.preOrder.Name = "preOrder";
+            this.preOrder.Size = new System.Drawing.Size(93, 23);
+            this.preOrder.TabIndex = 19;
+            this.preOrder.TabStop = true;
+            this.preOrder.Text = "preOrder";
+            this.preOrder.UseVisualStyleBackColor = true;
+            // 
+            // postOrder
+            // 
+            this.postOrder.AutoSize = true;
+            this.postOrder.Location = new System.Drawing.Point(492, 155);
+            this.postOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.postOrder.Name = "postOrder";
+            this.postOrder.Size = new System.Drawing.Size(99, 23);
+            this.postOrder.TabIndex = 20;
+            this.postOrder.TabStop = true;
+            this.postOrder.Text = "postOrder";
+            this.postOrder.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(431, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 19);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Eleman Sayısı :";
+            // 
+            // elemanSayisi
+            // 
+            this.elemanSayisi.AutoSize = true;
+            this.elemanSayisi.Location = new System.Drawing.Point(552, 36);
+            this.elemanSayisi.Name = "elemanSayisi";
+            this.elemanSayisi.Size = new System.Drawing.Size(14, 19);
+            this.elemanSayisi.TabIndex = 23;
+            this.elemanSayisi.Text = "-";
+            // 
+            // elemanAraDataGrid
+            // 
+            this.elemanAraDataGrid.AllowUserToAddRows = false;
+            this.elemanAraDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.elemanAraDataGrid.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.elemanAraDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.elemanAraDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.elemanAraDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17});
+            this.elemanAraDataGrid.Location = new System.Drawing.Point(13, 248);
+            this.elemanAraDataGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.elemanAraDataGrid.Name = "elemanAraDataGrid";
+            this.elemanAraDataGrid.RowHeadersWidth = 51;
+            this.elemanAraDataGrid.Size = new System.Drawing.Size(1898, 617);
+            this.elemanAraDataGrid.TabIndex = 24;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Ad";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Adres";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Telefon";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Mail";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Doğum Tarihi";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Yabancı Dil";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Ehliyet";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Okul Adı";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Lisans Türü";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Bölümü";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Başlangıç Tarihi";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Bitiş Tarihi";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Not Ortalaması";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "İsyeri Adı";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "İşyeri Adresi";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "İş Tecrübesi Pozisyon veya Görevi";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "İş Tecrübesi Süresi";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dosyabuton
+            // 
+            this.dosyabuton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.dosyabuton.Location = new System.Drawing.Point(1757, 886);
+            this.dosyabuton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dosyabuton.Name = "dosyabuton";
+            this.dosyabuton.Size = new System.Drawing.Size(154, 43);
+            this.dosyabuton.TabIndex = 25;
+            this.dosyabuton.Text = "Listeyi İndir";
+            this.dosyabuton.UseVisualStyleBackColor = false;
+            this.dosyabuton.Click += new System.EventHandler(this.dosyabuton_Click_1);
             // 
             // ElemanAra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1794, 618);
-            this.Controls.Add(this.button2);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1924, 961);
+            this.Controls.Add(this.dosyabuton);
+            this.Controls.Add(this.elemanAraDataGrid);
+            this.Controls.Add(this.elemanSayisi);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.postOrder);
+            this.Controls.Add(this.preOrder);
+            this.Controls.Add(this.inOrder);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lisansTuru);
             this.Controls.Add(this.label3);
@@ -408,8 +487,11 @@
             this.Controls.Add(this.ingilizceBilenlerCheckBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.searcbar);
-            this.Controls.Add(this.elemanAraDataGrid);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ElemanAra";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ElemanAra";
             this.Load += new System.EventHandler(this.ElemanAra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.elemanAraDataGrid)).EndInit();
@@ -419,8 +501,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView elemanAraDataGrid;
         private System.Windows.Forms.TextBox searcbar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox ingilizceBilenlerCheckBox;
@@ -432,25 +512,31 @@
         private System.Windows.Forms.TextBox maksimumYasTextBox;
         private System.Windows.Forms.ComboBox ehliyetComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Mail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn YabanciDil;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ehliyet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OkulAdi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Turu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Bolumu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BaglangicTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BitisTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NotOrtalamasi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IsyeriAdi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IsyeriAdresi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pozisyon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn isSuresi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox lisansTuru;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RadioButton inOrder;
+        private System.Windows.Forms.RadioButton preOrder;
+        private System.Windows.Forms.RadioButton postOrder;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label elemanSayisi;
+        private System.Windows.Forms.DataGridView elemanAraDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.Button dosyabuton;
     }
 }
